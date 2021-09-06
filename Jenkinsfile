@@ -3,14 +3,16 @@ pipeline{
   stages{
     stage ('compile'){
 	  steps{
-	    pwd
-		echo "compile"
+	    sh ''' pwd
+	    echo "compile"
+	    '''
 	  }
 	}
 	stage ('test'){
 	  steps{
-	    whoami
+	    sh ''' whoami
 		echo "test"
+	    '''
 	  }
 	}
 	stage ('install'){
