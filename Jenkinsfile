@@ -18,6 +18,7 @@ pipeline{
 	stage ('install'){
 	  steps{
 	    echo "install"
+	    echo "hello world"
 	  }
 	}
   }
